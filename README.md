@@ -24,20 +24,13 @@ Books:
 
 ## Task
 
+
 Description.
 
-Task 2. (15 points) Tune regions and monitor with jdk monitoring tools
+Task 3. (10 points) MAT for heap dump analysis
 
-Note: Try Java 8 jdk tools
-
-Take your pet or current project app for the next exercises with JVM settings via flags and console utilities.
-
-* Heap should be divided to Old and Young generations of equal size, where areas of Young generation are in following ratio:  3-Eden, 1-S0, 1-S1
-* Heap should be of 512MB and divided to Old and Young generations of equal size, where areas of Young generation are in following ratio:  2-Eden, 1-S0, 1-S1
-* Heap should be of 512MB with Old generation of 128MB and Young generation with areas in following ratio:  3-Eden, 1-S0, 1-S1
-* Heap should be divided to Old generation of 128MB and Young generations with areas:  Eden of 384MB, S0 of 128MB, S1 of 128MB
- 
-
-After JVM start make screenshots with jdk monitoring tools with JVM flags for each point.
-
-Use this link to find appropriate tool. Check yourself with JVisualVM.
+* Write simple application that consumes memory or take your mentoring pet application
+* Catch java.lang.OutOfMemoryError: Java heap space
+* Make heap dump (-XX:+HeapDumpOnOutOfMemoryError or via visualvm)
+* With Memory Analyzer Tool generate report that shows which classes are consuming the memory
+* Share results with mentor in essay format
