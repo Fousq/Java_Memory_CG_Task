@@ -24,13 +24,15 @@ Books:
 
 ## Task
 
-
 Description.
 
-Task 3. (10 points) MAT for heap dump analysis
+Task 4. (15 points) Classloading
 
-* Write simple application that consumes memory or take your mentoring pet application
-* Catch java.lang.OutOfMemoryError: Java heap space
-* Make heap dump (-XX:+HeapDumpOnOutOfMemoryError or via visualvm)
-* With Memory Analyzer Tool generate report that shows which classes are consuming the memory
-* Share results with mentor in essay format
+* Create a new abstract class (or interface) Animal with methods: "Play", "Voice".
+* Inherit Cat and Dog from the Animal class.
+* Compile the classes.
+* Create your own ClassLoader by extension of the standard ClassLoader.
+* Load the classes Cat and Dog into an array or collection Animals by your own class loader and run the methods "Play", "Voice".
+* Output data to console by log4j library (logger).
+
+Note: Methods should just print a text message.
