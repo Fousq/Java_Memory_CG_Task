@@ -26,12 +26,18 @@ Books:
 
 Description.
 
-Task 1. (20 points)
+Task 2. (15 points) Tune regions and monitor with jdk monitoring tools
 
-Design and implement code that will introduce:
+Note: Try Java 8 jdk tools
 
-* java.lang.OutOfMemoryError: Java heap space. You can use different data structures. Do not tune heap size.
-* java.lang.OutOfMemoryError: Java heap space. Create big objects continuously and make them stay in memory. Do not use arrays or collections.
-* java.lang.OutOfMemoryError: Metaspace. Load classes continuously and make them stay in memory.
-* java.lang.StackOverflowError. Use recursive methods. Don’t tune stack size.
-* java.lang.StackOverflowError. Do not use recursive methods. Don’t tune stack size.
+Take your pet or current project app for the next exercises with JVM settings via flags and console utilities.
+
+* Heap should be divided to Old and Young generations of equal size, where areas of Young generation are in following ratio:  3-Eden, 1-S0, 1-S1
+* Heap should be of 512MB and divided to Old and Young generations of equal size, where areas of Young generation are in following ratio:  2-Eden, 1-S0, 1-S1
+* Heap should be of 512MB with Old generation of 128MB and Young generation with areas in following ratio:  3-Eden, 1-S0, 1-S1
+* Heap should be divided to Old generation of 128MB and Young generations with areas:  Eden of 384MB, S0 of 128MB, S1 of 128MB
+ 
+
+After JVM start make screenshots with jdk monitoring tools with JVM flags for each point.
+
+Use this link to find appropriate tool. Check yourself with JVisualVM.
