@@ -26,13 +26,13 @@ Books:
 
 Description.
 
-Task 4. (15 points) Classloading
+Task 5. (5 points) String Deduplication
 
-* Create a new abstract class (or interface) Animal with methods: "Play", "Voice".
-* Inherit Cat and Dog from the Animal class.
-* Compile the classes.
-* Create your own ClassLoader by extension of the standard ClassLoader.
-* Load the classes Cat and Dog into an array or collection Animals by your own class loader and run the methods "Play", "Voice".
-* Output data to console by log4j library (logger).
+Run your pet/project application with enabled and disabled String Deduplication feature.
 
-Note: Methods should just print a text message.
+Analyze stat info to say final word to use or not to use this feature on your project. Discuss it with mentor.
+
+Possible penalties
+
+also -1 for each task if mentee ignores Java Code Conventions
+- (total points / amount of subtask in subtask list) for each missed subtask in each task
