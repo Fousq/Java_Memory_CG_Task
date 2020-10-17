@@ -1,0 +1,7 @@
+kz/zhanbolat/memory/ContinuousObject.java
+ kz.zhanbolat.memory.ContinuousObject
+kz/zhanbolat/memory/Application.java
+ kz.zhanbolat.memory.Application
+kz/zhanbolat/memory/RecursiveObject.java
+ kz.zhanbolat.memory.RecursiveObject
+ kz.zhanbolat.memory.RecursiveObject$InnerObject
