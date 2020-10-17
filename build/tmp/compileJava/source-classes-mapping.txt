@@ -1,0 +1,10 @@
+kz/zhanbolat/memory/Animal.java
+ kz.zhanbolat.memory.Animal
+kz/zhanbolat/memory/Application.java
+ kz.zhanbolat.memory.Application
+kz/zhanbolat/memory/Dog.java
+ kz.zhanbolat.memory.Dog
+kz/zhanbolat/memory/AnimalClassLoader.java
+ kz.zhanbolat.memory.AnimalClassLoader
+kz/zhanbolat/memory/Cat.java
+ kz.zhanbolat.memory.Cat

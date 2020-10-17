@@ -26,12 +26,13 @@ Books:
 
 Description.
 
-Task 1. (20 points)
+Task 4. (15 points) Classloading
 
-Design and implement code that will introduce:
+* Create a new abstract class (or interface) Animal with methods: "Play", "Voice".
+* Inherit Cat and Dog from the Animal class.
+* Compile the classes.
+* Create your own ClassLoader by extension of the standard ClassLoader.
+* Load the classes Cat and Dog into an array or collection Animals by your own class loader and run the methods "Play", "Voice".
+* Output data to console by log4j library (logger).
 
-* java.lang.OutOfMemoryError: Java heap space. You can use different data structures. Do not tune heap size.
-* java.lang.OutOfMemoryError: Java heap space. Create big objects continuously and make them stay in memory. Do not use arrays or collections.
-* java.lang.OutOfMemoryError: Metaspace. Load classes continuously and make them stay in memory.
-* java.lang.StackOverflowError. Use recursive methods. Don’t tune stack size.
-* java.lang.StackOverflowError. Do not use recursive methods. Don’t tune stack size.
+Note: Methods should just print a text message.
