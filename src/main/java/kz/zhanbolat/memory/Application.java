@@ -1,7 +1,12 @@
 package kz.zhanbolat.memory;
 
+import javassist.CannotCompileException;
+import javassist.ClassPool;
+
 public class Application {
-    public static void main(String[] args) {
+    private static ClassPool classPool = ClassPool.getDefault();
+
+    public static void main(String[] args) throws CannotCompileException {
         /* Uncomment to throw java.lang.OutOfMemoryError: Java heap space
         java.util.List<Integer> list = new java.util.ArrayList<>();
 
@@ -17,6 +22,12 @@ public class Application {
         final long start = System.currentTimeMillis();
         while(true) {
             continuousObject = new ContinuousObject(random.nextInt(), random.nextInt(), random.nextInt(), continuousObject);
+        }*/
+        /* Uncomment to throw java.lang.OutOfMemoryError: java.lang.OutOfMemoryError: Metaspace.
+            Warning: can take a lot of time to cause the error
+            if the option -XX:MaxMetaspaceSize is not changed
+        for (long i = 0;;i++) {
+            Class clazz = classPool.makeClass("kz.zhanbolat.memory.ContinuousObject" + i).toClass();
         }*/
     }
 }
