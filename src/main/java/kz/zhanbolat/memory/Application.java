@@ -29,5 +29,13 @@ public class Application {
         for (long i = 0;;i++) {
             Class clazz = classPool.makeClass("kz.zhanbolat.memory.ContinuousObject" + i).toClass();
         }*/
+        /* Uncomment to throw java.lang.OutOfMemoryError: java.lang.StackOverflowError.
+        recursiveMethod();*/
+        /* Uncomment to throw java.lang.OutOfMemoryError: java.lang.StackOverflowError.
+        System.out.println(new RecursiveObject());*/
+    }
+
+    private static void recursiveMethod() {
+        recursiveMethod();
     }
 }
