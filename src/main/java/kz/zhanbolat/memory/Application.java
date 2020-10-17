@@ -13,9 +13,10 @@ public class Application {
         /* Uncomment to throw java.lang.OutOfMemoryError: Java heap space.
             Warning: can take a lot of time to cause the error
         java.util.Random random = new java.util.Random();
-        ContinuousObject continuousObject = new ContinuousObject(random.nextInt());
+        ContinuousObject continuousObject = new ContinuousObject(random.nextInt(), random.nextInt(), random.nextInt());
+        final long start = System.currentTimeMillis();
         while(true) {
-            continuousObject = new ContinuousObject(random.nextInt(), continuousObject);
+            continuousObject = new ContinuousObject(random.nextInt(), random.nextInt(), random.nextInt(), continuousObject);
         }*/
     }
 }

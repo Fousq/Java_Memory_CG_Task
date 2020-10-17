@@ -4,14 +4,20 @@ import java.util.Objects;
 
 public class ContinuousObject {
     private Integer number;
+    private Integer number2;
+    private Integer number3;
     private ContinuousObject object;
 
-    public ContinuousObject(Integer number) {
+    public ContinuousObject(Integer number, Integer number2, Integer number3) {
         this.number = number;
+        this.number2 = number2;
+        this.number3 = number3;
     }
 
-    public ContinuousObject(Integer number, ContinuousObject object) {
+    public ContinuousObject(Integer number, Integer number2, Integer number3, ContinuousObject object) {
         this.number = number;
+        this.number2 = number2;
+        this.number3 = number3;
         this.object = object;
     }
 
